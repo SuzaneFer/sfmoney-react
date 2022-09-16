@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.26.0",
+    "cypress": "^10.8.0",
     "full-icu": "^1.4.0",
     "miragejs": "^0.1.43",
     "polished": "^4.1.4",
@@ -30,7 +31,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": [

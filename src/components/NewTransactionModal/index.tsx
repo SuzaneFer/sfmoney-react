@@ -65,12 +65,14 @@ export function NewTransactionModal({
 					placeholder="Título"
 					value={title}
 					onChange={(event) => setTitle(event.target.value)}
+					data-cy='titulo-transacao'
 				/>
 				<input
 					type="number"
 					placeholder="Valor"
 					value={amount}
 					onChange={(event) => setAmount(Number(event.target.value))}
+					data-cy='valor-transacao'
 				/>
 
 				<TransactionTypeContainer>
@@ -81,9 +83,11 @@ export function NewTransactionModal({
 						}}
 						isActive={type === "deposit"}
 						activeColor="green"
+						data-cy='button-entrada'
 					>
 						<img src={incomeImg} alt="Entrada" />
 						<span>Entrada</span>
+						
 					</RadioBox>
 					<RadioBox
 						type="button"
@@ -92,6 +96,7 @@ export function NewTransactionModal({
 						}}
 						isActive={type === "withdraw"}
 						activeColor="red"
+						data-cy='button-saida'
 					>
 						<img src={outcomeImg} alt="Saída" />
 						<span>Saída</span>
@@ -103,9 +108,10 @@ export function NewTransactionModal({
 					placeholder="Categoria"
 					value={category}
 					onChange={(event) => setCategory(event.target.value)}
+					data-cy='categoria-transacao'
 				/>
 
-				<button type="submit">Cadastrar</button>
+				<button type="submit" data-cy='cadastrar-transacao'>Cadastrar</button>
 			</Container>
 		</Modal>
 	);

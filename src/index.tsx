@@ -13,19 +13,19 @@ createServer({
 			transactions: [
 				{
 					id: 1,
-					title: "Freelance de website.",
+					title: "Ganho",
 					type: "deposit",
-					category: "Dev",
-					amount: 6000,
-					createdAt: new Date("2021-02-12 09:01:44"),
+					category: "categoria",
+					amount: 200,
+					createdAt: new Date("2022-09-15 09:01:44"),
 				},
 				{
 					id: 2,
-					title: "Aluguel.",
+					title: "Despesa",
 					type: "withdraw",
-					category: "Casa",
-					amount: 1100,
-					createdAt: new Date("2021-02-14 11:01:44"),
+					category: "categoria",
+					amount: 100,
+					createdAt: new Date("2022-09-15 11:01:44"),
 				},
 			],
 		});
